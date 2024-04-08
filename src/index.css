@@ -1,6 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container{
   margin: 0 auto;
   width: 1440px;
   min-width: 1440px;
+  /* background-color: red; */
+}
 
+.leftNav{
+  text-align: center;
 }
