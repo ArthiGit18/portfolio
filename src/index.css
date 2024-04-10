@@ -14,3 +14,105 @@
 .leftNav{
   text-align: center;
 }
+
+.banner-content {
+  background-color: #e7e7ee;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden; Hide the content that moves in from the sides */
+}
+
+.banner-about {
+  animation: slideInLeft 1s forwards; /* Animation for 'banner-about' coming from left */
+}
+
+.bammer-img {
+  animation: slideInRight 1s forwards; /* Animation for 'bammer-img' coming from right */
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%); /* Start from outside the left edge */
+  }
+  to {
+    transform: translateX(0); /* Move to original position */
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); /* Start from outside the right edge */
+  }
+  to {
+    transform: translateX(0); /* Move to original position */
+  }
+}
+
+/* About Area */
+
+.about-main{
+  padding: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.links-main{
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e7e7ee;
+}
+
+.skills-main{
+  padding: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.education-main{
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e7e7ee;
+  
+}
+
+.experience-main{
+  padding: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.projects-main{
+  padding: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e7e7ee;
+}
+
+.contacts-main{
+  padding: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}

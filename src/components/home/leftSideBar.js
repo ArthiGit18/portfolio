@@ -1,14 +1,56 @@
+
 // LeftSidebar.js
-import React from "react";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
+import React from 'react';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import Paper from "@mui/material/Paper";
 
-const LeftSidebar = ({ onItemSelected }) => {
-  const handleItemClick = (index) => {
-    onItemSelected(index);
+const LeftSidebar = ({ activeItem, setActiveItem }) => {
+
+  const handleItemClick = (itemIndex) => {
+    setActiveItem(itemIndex);
+    const contentRef = document.getElementById(`content-${itemIndex}`);
+    if (contentRef) {
+      contentRef.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
+
+  const listItemStyle = {
+    color: activeItem === 1 ? '#2196f3' : 'black',
+
+
+  };
+  const listItemStyle2 = {
+    color: activeItem === 2 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle3 = {
+    color: activeItem === 3 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle4 = {
+    color: activeItem === 4 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle5 = {
+    color: activeItem === 5 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle6 = {
+    color: activeItem === 6 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle7 = {
+    color: activeItem === 7 ? '#2196f3' : 'black',
+
+  };
+  const listItemStyle8 = {
+    color: activeItem === 8 ? '#2196f3' : 'black',
+
+  };
+
 
   return (
     <Paper
@@ -23,10 +65,13 @@ const LeftSidebar = ({ onItemSelected }) => {
       }}
     >
       <List>
-        <ListItem>
+
+        <ListItem sx={{ display: "flex", justifyContent: "center" }}>
           {/* <img src="/assets/myImg/ammu-4.png" alt="My-Img" style={{width: "300px"}} /> */}
-          {/* <img src="/assets/myImg/ammu-2.jpeg" alt="My-Img" style={{width: "300px"}} /> */}
+          <img src="/assets/myImg/ammu-5.png" alt="My-Img" style={{ width: "200px", height: "200px", borderRadius: "100px" }} />
         </ListItem>
+
+
         <ListItem>
           <ListItemText
             primary="Arthi A"
@@ -47,31 +92,109 @@ const LeftSidebar = ({ onItemSelected }) => {
               style: {
                 textAlign: "center",
                 fontSize: "10px",
+                letterSpacing: "10px"
               },
             }}
           />
         </ListItem>
 
-        <ListItem button onClick={() => handleItemClick(1)}>
-          <ListItemText className="leftNav" primary="Home" />
+        <ListItem button onClick={() => handleItemClick(1)}
+          style={listItemStyle}>
+          <ListItemText className="leftNav" primary="Home"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
         </ListItem>
 
-        <ListItem button onClick={() => handleItemClick(2)}>
-          <ListItemText className="leftNav" primary="About" />
+        <ListItem button onClick={() => handleItemClick(2)}
+          style={listItemStyle2}>
+          <ListItemText className="leftNav" primary="About"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
         </ListItem>
 
-        <ListItem button onClick={() => handleItemClick(3)}>
-          <ListItemText className="leftNav" primary="Links" />
+        <ListItem button onClick={() => handleItemClick(3)}
+          style={listItemStyle3}>
+          <ListItemText className="leftNav" primary="Links"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
         </ListItem>
 
-        <ListItem button onClick={() => handleItemClick(3)}>
-          <ListItemText className="leftNav" primary="Projects" />
+        <ListItem button onClick={() => handleItemClick(4)}
+          style={listItemStyle4}>
+          <ListItemText className="leftNav" primary="Skills"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
         </ListItem>
 
-        <ListItem button onClick={() => handleItemClick(3)}>
-          <ListItemText className="leftNav" primary="Contact" />
+        <ListItem button onClick={() => handleItemClick(5)}
+          style={listItemStyle5}>
+          <ListItemText className="leftNav" primary="Education"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
         </ListItem>
-        {/* Add more items as needed */}
+
+        <ListItem button onClick={() => handleItemClick(6)}
+          style={listItemStyle6}>
+          <ListItemText className="leftNav" primary="Experience"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
+        </ListItem>
+
+        <ListItem button onClick={() => handleItemClick(7)}
+          style={listItemStyle7}>
+          <ListItemText className="leftNav" primary="Projects"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
+        </ListItem>
+
+        <ListItem button onClick={() => handleItemClick(8)}
+          style={listItemStyle8}>
+          <ListItemText className="leftNav" primary="Contact"
+            primaryTypographyProps={{
+              style: {
+                textAlign: "center",
+                fontSize: "15px"
+              },
+            }}
+          />
+        </ListItem>
+
+
       </List>
     </Paper>
   );
