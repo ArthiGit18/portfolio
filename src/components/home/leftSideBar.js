@@ -19,36 +19,36 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
 
   const listItemStyle = {
     color: activeItem === 1 ? '#2196f3' : 'black',
-
+    padding: "5px",
 
   };
   const listItemStyle2 = {
     color: activeItem === 2 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle3 = {
     color: activeItem === 3 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle4 = {
     color: activeItem === 4 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle5 = {
     color: activeItem === 5 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle6 = {
     color: activeItem === 6 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle7 = {
     color: activeItem === 7 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
   const listItemStyle8 = {
     color: activeItem === 8 ? '#2196f3' : 'black',
-
+    padding: "5px",
   };
 
 
@@ -68,7 +68,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
 
         <ListItem sx={{ display: "flex", justifyContent: "center" }}>
           {/* <img src="/assets/myImg/ammu-4.png" alt="My-Img" style={{width: "300px"}} /> */}
-          <img src="/assets/myImg/ammu-5.png" alt="My-Img" style={{ width: "200px", height: "200px", borderRadius: "100px" }} />
+          <img src="/assets/myImg/ammu-5.png" alt="My-Img" style={{ width: "150px", height: "150px", borderRadius: "75px" }} />
         </ListItem>
 
 
@@ -91,8 +91,8 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "10px",
-                letterSpacing: "10px"
+                fontSize: "13px",
+                letterSpacing: "13px"
               },
             }}
           />
@@ -104,7 +104,8 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px",
+
               },
             }}
           />
@@ -116,7 +117,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -128,7 +129,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -140,7 +141,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -152,7 +153,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -164,7 +165,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -176,7 +177,7 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
@@ -188,12 +189,15 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
             primaryTypographyProps={{
               style: {
                 textAlign: "center",
-                fontSize: "15px"
+                fontSize: "13px"
               },
             }}
           />
         </ListItem>
 
+        <ListItem sx={{display: "flex", justifyContent: "center", textAlign: "center", padding: "20px"}}>
+          © Copyright arthi©2024 All rights reserved @ arthi | 
+        </ListItem>
 
       </List>
     </Paper>

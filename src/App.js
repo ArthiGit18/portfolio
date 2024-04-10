@@ -2,7 +2,7 @@ import Components from './components';
 
 function App() {
   return (
-    <div className="container">
+    <div >
       <Components />
     </div>
   );
