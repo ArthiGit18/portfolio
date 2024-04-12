@@ -1,7 +1,10 @@
 
 // ContentArea.js
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../../index.css';
+import Links from './links';
+import Skills from './skills';
+
 
 const ContentArea = ({ setActiveItem, activeItem }) => {
   const itemRefs = {
@@ -58,7 +61,7 @@ const ContentArea = ({ setActiveItem, activeItem }) => {
       }}
     >
       <div >
-      
+
         <div className='banner-content' ref={itemRefs[1]} data-index={1} id="content-1">
           <div className='banner-about'>
             <h2 style={{ fontSize: "80px", padding: "30px 0" }}> Hi! <br></br>I'm A.Arthi</h2>
@@ -77,76 +80,21 @@ const ContentArea = ({ setActiveItem, activeItem }) => {
           </small>
 
           <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>ABOUT ME</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
+          <p style={{ lineHeight: "30px" }}>
+            Enthusiastic and results-oriented web developer with a passion for crafting visually appealing and user-friendly
+            websites. Leveraging expertise in <strong>HTML, CSS, JavaScript, and various web development frameworks,</strong> I aim to contribute
+            to dynamic projects that push the boundaries of innovation. Seeking a challenging role where I can utilize my skills to
+            deliver high-quality, scalable solutions, and collaborate with a talented team to drive impactful results in the everevolving landscape of web development.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
-        </div>
-        
-        <div className='links-main' ref={itemRefs[3]} data-index={3} id="content-3">
-          <small >
-            Website
-          </small>
 
-          <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>PROFILES AND LINKS</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
+        </div>
+
+        <div className='links-main' ref={itemRefs[3]} data-index={3} id="content-3">
+         <Links />
         </div>
 
         <div className='skills-main' ref={itemRefs[4]} data-index={4} id="content-4">
-          <small>
-            skills
-          </small>
-
-          <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>SKILLS</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
+        <Skills />
         </div>
 
         <div className='education-main' ref={itemRefs[5]} data-index={5} id="content-5">
@@ -228,7 +176,7 @@ const ContentArea = ({ setActiveItem, activeItem }) => {
           </p>
         </div>
 
-        <div className='contacts-main'  ref={itemRefs[8]} data-index={8} id="content-8">
+        <div className='contacts-main' ref={itemRefs[8]} data-index={8} id="content-8">
           <small>
             Contact
           </small>
