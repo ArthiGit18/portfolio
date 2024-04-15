@@ -20,7 +20,6 @@ const LeftSidebar = ({ activeItem, setActiveItem }) => {
   const listItemStyle = {
     color: activeItem === 1 ? '#2196f3' : 'black',
     padding: "5px",
-
   };
   const listItemStyle2 = {
     color: activeItem === 2 ? '#2196f3' : 'black',

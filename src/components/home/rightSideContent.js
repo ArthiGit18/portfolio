@@ -4,6 +4,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../../index.css';
 import Links from './links';
 import Skills from './skills';
+import Education from './education';
+import Experience from './experience';
+import Banner from './banner';
+import About from './about';
 
 
 const ContentArea = ({ setActiveItem, activeItem }) => {
@@ -55,98 +59,31 @@ const ContentArea = ({ setActiveItem, activeItem }) => {
     <main
       style={{
         flexGrow: 1,
-        // padding: '20px',
-        // overflowY: 'scroll',
-        // marginLeft: '240px', // Adjusted padding to accommodate sidebar
       }}
     >
       <div >
-
         <div className='banner-content' ref={itemRefs[1]} data-index={1} id="content-1">
-          <div className='banner-about'>
-            <h2 style={{ fontSize: "80px", padding: "30px 0" }}> Hi! <br></br>I'm A.Arthi</h2>
-            <p>WEB DEVELOPER</p>
-            <button class="button-48" role="button"><span className="text">Download CV</span></button>
-            {/* <button className='btn-banner'>Download CV</button> */}
-          </div>
-          <div className='bammer-img' style={{ height: "90vh" }}>
-            <img src="/assets/myImg/ammu-4.png" alt="My-Img" />
-          </div>
+          <Banner />
         </div>
 
         <div className='about-main' ref={itemRefs[2]} data-index={2} id="content-2">
-          <small>
-            about
-          </small>
-
-          <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>ABOUT ME</h2>
-          <p style={{ lineHeight: "30px" }}>
-            Enthusiastic and results-oriented web developer with a passion for crafting visually appealing and user-friendly
-            websites. Leveraging expertise in <strong>HTML, CSS, JavaScript, and various web development frameworks,</strong> I aim to contribute
-            to dynamic projects that push the boundaries of innovation. Seeking a challenging role where I can utilize my skills to
-            deliver high-quality, scalable solutions, and collaborate with a talented team to drive impactful results in the everevolving landscape of web development.
-          </p>
-
+          <About />
         </div>
 
         <div className='links-main' ref={itemRefs[3]} data-index={3} id="content-3">
-         <Links />
+          <Links />
         </div>
 
         <div className='skills-main' ref={itemRefs[4]} data-index={4} id="content-4">
-        <Skills />
+          <Skills />
         </div>
 
         <div className='education-main' ref={itemRefs[5]} data-index={5} id="content-5">
-          <small>
-            Education
-          </small>
-
-          <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>SKILLS</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
+          <Education />
         </div>
 
         <div className='experience-main' ref={itemRefs[6]} data-index={6} id="content-6">
-          <small>
-            skills
-          </small>
-
-          <h2 style={{ letterSpacing: "10px", margin: "30px 0" }}>SKILLS</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            scelerisque commodo sem, vel iaculis diam vestibulum sit amet.
-            Maecenas vestibulum justo vel mauris malesuada, vel lobortis ex
-            rutrum. Donec ut ex et nulla pellentesque sodales vel vel justo.
-            Nulla vitae suscipit ipsum. Cras eu velit lectus. Nullam nec purus
-            non eros vestibulum pharetra. Proin vehicula arcu eget libero
-            eleifend, quis sollicitudin lectus gravida. Cras ac ex est.
-          </p>
+          <Experience />
         </div>
 
 
