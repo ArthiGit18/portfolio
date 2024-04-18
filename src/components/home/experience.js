@@ -34,7 +34,7 @@ const steps = [
   },
 ];
 
-const Experience = () => {
+const Experience = ({isVisible}) => {
   const [activeStep, setActiveStep] = React.useState(steps.length - 1); // Set initial active step to the last index of the steps array
 
   const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
@@ -109,7 +109,7 @@ const Experience = () => {
   };
 
   return (
-    <div>
+    <div className={`experience-content ${isVisible ? 'slide-from-left' : ''}`}>
       <small>Experience</small>
       <h2 style={{ letterSpacing: '10px', margin: '30px 0' }}>WORK EXPERIENCE</h2>
       <Box sx={{ maxWidth: '100%' }}>

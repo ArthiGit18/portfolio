@@ -20,9 +20,9 @@ const styleEvenLetters = (index) => {
     return index % 2 === 0 ? { color: "#1a90ff" } : {};
 };
 
-const Skills = () => {
+const Skills = ({ isVisible }) => {
     return (
-        <>
+        <div className={`skills-content ${isVisible ? 'slide-from-left' : ''}`}>
             <small>
                 skills
             </small>
@@ -65,7 +65,7 @@ const Skills = () => {
                     <span key={index} style={styleEvenLetters(index)}>{char}</span>
                 ))}
             </h3>
-        </>
+        </div>
     )
 }
 
